@@ -1,6 +1,6 @@
 # algorithm-with-golang
 - golang으로 알고리즘 연습하기
-- 간단한 프로젝트 구현하기([형태소 분석기](https://bab2min.tistory.com/561?category=686456))
+- [간단한 프로젝트 구현하기](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/project/project.md)
 
 ## golang
 - static typed(type 미리 선언), strong typed(implicit 형변환 x) 
