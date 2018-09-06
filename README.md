@@ -25,3 +25,17 @@ golang으로 알고리즘 연습하기
 ```
 docker run -it --name go golang:latest /bin/bash 
 ```
+
+## gopath ?
+- 기준 디렉터리, workspace 위치를 정의 하는 것
+  - workspace는 bin, pkg, src 디렉터리로 구성됨
+    - [workspace 개념](https://github.com/golang-kr/golang-doc/wiki/Go-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95#workspace)
+```
+  export GOPATH=위치
+```
+- 이후에 go env 명령어를 통해 GOPATH 확인 가능
+- 소스를 받아오거나 패키지를 컴파일할 때 해당 경로 기준으로 진행됨
+- 진행하는 프로젝트 위치로 매번 수정해주기
+
+
+## 그냥 [여기](https://github.com/golang-kr/golang-doc/wiki/Go-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95) 참조하세요!
