@@ -1,7 +1,7 @@
 # algorithm-with-golang
-golang으로 알고리즘 연습하기
-스크립트 언어만 하다보니 불안
-컴파일 언어 하나쯤은 제대로 해보고 싶은데 c 쪽은 너무 식상
+golang으로 알고리즘 연습하기  
+스크립트 언어만 하다보니 불안  
+컴파일 언어 하나쯤은 제대로 해보고 싶은데 c 쪽은 너무 식상  
 
 ## golang
 - static typed(type 미리 선언), strong typed(implicit 형변환 x) 
