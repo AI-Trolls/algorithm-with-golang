@@ -33,5 +33,7 @@ func main() {
 	var bnum3 byte = 'a'  // can't use "double qoute "
 
 	// rune for unicode(UTF-8)
-	// var r1 rune = ''
+	var r1 rune = '한'
+	var r2 rune = '\ud55c'
+	var r3 rune = '\U0000d55c'
 }
