@@ -38,4 +38,4 @@ docker run -it --name go golang:latest /bin/bash
 - 진행하는 프로젝트 위치로 매번 수정해주기
 
 
-## 그냥 [여기](https://github.com/golang-kr/golang-doc/wiki/Go-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95) 참조하세요!
+## 기본적인 것은 [여기](https://github.com/golang-kr/golang-doc/wiki/Go-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95) 참조하세요!
