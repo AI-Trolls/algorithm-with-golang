@@ -44,3 +44,11 @@ docker run -it --name go golang:latest /bin/bash
 
 ## vim에서 개발 환경 구축
 - https://www.joinc.co.kr/w/man/12/golang/Start
+
+
+## 명령어 정리
+```
+go build <source> # 소스가 위치하는 디렉터리에 컴파일
+go install <source> # 관련 패키지 모두 받아와 컴파일 후 bin 디렉터리에 실행 파일 생성
+go get <주소> # 외부 소스 fetch + build + compile
+```
