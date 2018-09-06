@@ -53,3 +53,5 @@ go install <source> # 관련 패키지 모두 받아와 컴파일 후 bin 디렉
 go get <주소> # 외부 소스 fetch + build + compile
 gofmt -w 소스.go # 자동 정렬!!!
 ```
+
+## 예시 소스들은 [여기](https://github.com/AI-Trolls/algorithm-with-golang/tree/master/basic/src/github.com/songjein)
