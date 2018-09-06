@@ -43,4 +43,4 @@ docker run -it --name go golang:latest /bin/bash
 ## 기본 문법은 [여기](http://pyrasis.com/book/GoForTheReallyImpatient/Unit01)가 최고입니다.
 
 ## vim에서 개발 환경 구축
-- https://golangkorea.github.io/post/vim-go/
+- https://www.joinc.co.kr/w/man/12/golang/Start
