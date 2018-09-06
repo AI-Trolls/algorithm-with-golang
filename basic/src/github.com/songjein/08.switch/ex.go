@@ -52,6 +52,8 @@ func main() {
 		fmt.Println(4567)
 	}
 
+	// switch에서 조건식 사용하려면 switch뒤에 변수 명시하면 안됨
+
 	rand.Seed(time.Now().UnixNano())
 
 	switch i := rand.Intn(10); {
