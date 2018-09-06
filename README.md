@@ -20,3 +20,8 @@ golang으로 알고리즘 연습하기
 - docker도 이거로 만들어짐
   - 웹브라우저, 서버, 디비 등 큰 규모의 복잡한 애플리케이션 개발에 적합 (메모리 관리 철저해야 하는 것에는 부적합)
 
+
+## 설치
+```
+docker run -it --name go golang:latest /bin/bash 
+```
