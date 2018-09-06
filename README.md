@@ -51,4 +51,5 @@ docker run -it --name go golang:latest /bin/bash
 go build <source> # 소스가 위치하는 디렉터리에 컴파일
 go install <source> # 관련 패키지 모두 받아와 컴파일 후 bin 디렉터리에 실행 파일 생성
 go get <주소> # 외부 소스 fetch + build + compile
+gofmt -w 소스.go # 자동 정렬!!!
 ```
