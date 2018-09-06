@@ -11,7 +11,8 @@ golang으로 알고리즘 연습하기
 - garbage collection
   - 컬렉터 내장되어 메모리관리 자동, 생산성 높일 수
 - concurrency
-  - go 키워드를 통한 여러개 함수 실행(goroutine) 및 채널을 통한 통신 가능 vs. 쓰레드(커널의 도움 받아 생성 부담스러움)
+  - go 키워드를 통한 여러개 함수 실행(goroutine) 및 채널을 통한 통신 가능 
+  - vs. 쓰레드(커널의 도움 받아 생성 부담스러움)
 - multicore env
 - module, package
   - 자체 모듈화 제공, 다른 사람 소스 그대로 가져와 바로 사용 가능(go get, go install), 의존성 관리 쉬움
