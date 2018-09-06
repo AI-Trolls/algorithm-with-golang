@@ -1,0 +1,9 @@
+# 프로젝트
+- golang을 이용한 형태소분석기 구현
+- golang을 이용한 디팬던시 파서 구현 (Future work)
+
+## 참고자료
+- [형태소 분석기 구현하기](https://bab2min.tistory.com/561?category=686456)
+- [아호코라식 알고리즘](https://www.slideshare.net/ssuser81b91b/ahocorasick-algorithm)
+- [초중종성 쪼개기](http://hanpsy.tistory.com/2)
+- [초중종성 쪼개기 2](https://gist.github.com/thirdj/5333532)
