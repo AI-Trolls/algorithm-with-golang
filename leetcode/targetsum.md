@@ -74,5 +74,24 @@ func findTargetSumWays(nums []int, S int) int {
     return targetSum(0, 0, 0) + targetSum(0, 1, 0)
 }
 ```
+- 다른 사람 소스중 굉장히 간결했던 소스
+```go
+func findTargetSumWays(nums []int, S int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+    if len(nums) == 1 {
+        ways := 0
+        if nums[0] == S {
+            ways++
+        }
+        if nums[0] == -S {
+            ways++
+        }
+        return ways
+    }
+    return findTargetSumWays(nums[1:], S-nums[0]) + findTargetSumWays(nums[1:], S+nums[0])
+}
+```
 
 - dp로 접근해보기
