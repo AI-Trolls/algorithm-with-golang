@@ -95,3 +95,14 @@ func findTargetSumWays(nums []int, S int) int {
 ```
 
 - dp로 접근해보기
+	- 몇 달전에 키 아이디어를 봤었는데 얼핏 기억난다. 이제 내 것이 되었는지 조금 고민하다가 식을 자연스럽게 유도할 수 있었다.
+	```
+	# 목표 : + , - 중에 하나의 연산은 소거 시켜버리자!
+	positive_set + negative_set = target 이 되야하는게 이 문제
+	positive_set = target - negative_set 이 되고, 조금만 더 생각해보면
+	positive_set = target + (total - positive_set) 이 된다. 우항의 positive_set을 좌변으로 넘겨버리면
+	2 * positive_set = target + total이 되고
+	# 결국 문제는 아래와 같이 바뀐다
+	positive_set = (target + total) / 2
+	# 전체 값 중 몇개를 골라 우항의 값을 만들 수 있으면 우린 답을 구할 수 있다고 확신할 수 있게 되버리는 것
+	```
