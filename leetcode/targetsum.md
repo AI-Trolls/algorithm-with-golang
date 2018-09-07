@@ -33,5 +33,44 @@ func findTargetSumWays(nums []int, S int) int {
 ```
 
 - dfs + memo방식으로 접근
-	- memo [20][2][1001] 로 선언하니, 세번째 idx(total)이 음수가 나오는경우 런타임에러
-	- 
+	- memo [20][2][1001]int 로 선언하니, 세번째 idx(total)이 음수가 나오는경우 런타임에러
+	- memo map[string]int 로 선언하고 세 개의 정수를 하나의 스트링으로 묶어 저장하니 1/3정도로 빨라짐
+```go
+import "fmt"
+import "strconv"
+
+func findTargetSumWays(nums []int, S int) int {
+    
+    memo := make(map[string]int)
+    
+    var targetSum func (int, int, int) int 
+    targetSum = func (idx int, ops int, prevTotal int) int {
+        var total int
+        switch ops {
+        case 0:
+            total = prevTotal - nums[idx]
+        case 1:
+            total = prevTotal + nums[idx]
+        }
+        
+        key := strconv.Itoa(idx) + "-" + strconv.Itoa(ops) + "-" + strconv.Itoa(total)
+        if val, ok := memo[key]; ok {
+            return val
+        }
+        
+        if idx == len(nums) - 1 {
+            if total == S {
+                return 1
+            } else {
+                return 0
+            }
+        }
+        
+        key = strconv.Itoa(idx) + "-" + strconv.Itoa(ops) + "-" + strconv.Itoa(total)
+        memo[key] = targetSum(idx + 1, 0, total) + targetSum(idx + 1, 1, total)
+        return targetSum(idx + 1, 0, total) + targetSum(idx + 1, 1, total)
+    }
+    
+    return targetSum(0, 0, 0) + targetSum(0, 1, 0)
+}
+```
