@@ -3,4 +3,4 @@
 - 포맷 : 각 문제 md파일로 정리, 코드 + 아이디어 전개 기록
 
 ## Dynamic Programming
-- [Target sum](https://leetcode.com/problems/target-sum/description/)
+- [Target sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/leetcode/targetsum.md)
