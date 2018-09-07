@@ -34,7 +34,7 @@ func findTargetSumWays(nums []int, S int) int {
 
 - dfs + memo방식으로 접근
 	- memo [20][2][1001]int 로 선언하니, 세번째 idx(total)이 음수가 나오는경우 런타임에러
-	- memo map[string]int 로 선언하고 세 개의 정수를 하나의 스트링으로 묶어 저장하니 1/3정도로 빨라짐
+	- memo map[string]int 로 선언하고 세 개의 정수를 하나의 스트링으로 묶어 저장하니 1/2정도로 빨라짐
 ```go
 import "fmt"
 import "strconv"
@@ -74,3 +74,5 @@ func findTargetSumWays(nums []int, S int) int {
     return targetSum(0, 0, 0) + targetSum(0, 1, 0)
 }
 ```
+
+- dp로 접근해보기
