@@ -1,4 +1,4 @@
-# target sum
+# [target sum](https://leetcode.com/problems/target-sum/description/)
 
 - dfs 방식으로 접근
 	- base case 검사 조건식에서 idx == len(nums)로 하는 바람에
