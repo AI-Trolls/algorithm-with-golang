@@ -33,3 +33,5 @@ func findTargetSumWays(nums []int, S int) int {
 ```
 
 - dfs + memo방식으로 접근
+	- memo [20][2][1001] 로 선언하니, 세번째 idx(total)이 음수가 나오는경우 런타임에러
+	- 
