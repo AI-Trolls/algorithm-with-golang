@@ -95,7 +95,7 @@ func findTargetSumWays(nums []int, S int) int {
 ```
 
 - dp로 접근해보기
-	- 키 아이디어(+/- 둘중 하나를 소거 시키기)
+	- 키 아이디어: 문제를 복잡하게 만드는 +/- 둘중 하나를 소거 시키기
 	```
 	# 목표 : + , - 중에 하나의 연산은 소거 시켜버리자!
 	positive_set + negative_set = target 이 되야하는게 이 문제
