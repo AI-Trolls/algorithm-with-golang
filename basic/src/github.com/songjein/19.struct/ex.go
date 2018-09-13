@@ -52,4 +52,19 @@ func main() {
 
 	fmt.Println(rectangleArea(&rect3))
 	fmt.Println(rectangleArea(rrrr))
+
+	// cf
+	structCallByValue := func(rect Rectangle) {
+		rect.width = 9999
+	}
+	rr := Rectangle{30, 30}
+	structCallByValue(rr)
+
+	fmt.Println("rr", rr)
+
+	structCallByRef := func(rect *Rectangle) {
+		rect.width = 9999
+	}
+	structCallByRef(&rr)
+	fmt.Println("rr", rr)
 }
