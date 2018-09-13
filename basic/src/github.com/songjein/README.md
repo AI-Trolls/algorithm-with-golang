@@ -94,3 +94,60 @@ for key, value := range m {
 	// ~~~
 }
 ```
+
+### return multiple items
+```go
+func mmm(a int, b int) (int, int) {
+	return a + b, a - b
+}
+
+sum, diff = mmm(1, 5)
+```
+
+### ananymous func
+```go
+func() {
+	// ~~~~
+}()
+
+func(s string) {
+	// ~~~~ 
+}("hiiii")
+
+r := func(a int, b int) {
+
+}(6, 5)
+```
+
+### closure ; can save the flow of the func
+```go
+func calc() func(x int) int {
+	a, b := 1, 2
+
+	return func(x int) int {
+		return a*x + b	
+	}
+}
+
+f := calc()
+f(1)
+```
+
+### defer
+```go
+defer func() {
+	// ~~~~
+}()
+```
+
+### recover, panic
+```go
+func f() {
+	defere func() {
+		s := recover()
+		// ~~~~
+	}()
+
+	panic("Error")
+}
+```

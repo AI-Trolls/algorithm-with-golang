@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// defer -> LIFO
+	// defer -> LIFO (called right before this function's end)
 	defer world()
 
 	hello()
