@@ -12,7 +12,7 @@ func (rect *Rectangle) area() int {
 	return rect.width * rect.height
 }
 
-// but there's two way to pass struct to the receiver variable
+// but there's two way to pass the struct to the receiver variable
 
 func (rect *Rectangle) scaleA(factor int) {
 	rect.width = rect.width * factor
