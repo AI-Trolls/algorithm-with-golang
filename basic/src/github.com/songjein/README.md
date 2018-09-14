@@ -151,3 +151,24 @@ func f() {
 	panic("Error")
 }
 ```
+
+### ptr
+```go
+var nPtr *int
+```
+
+### struct
+```go
+type Person struct {
+	name string
+	age int
+}
+
+func main() {
+	var p Person
+	p.name = "jein"
+	p.age = 22
+}
+```
+
+
