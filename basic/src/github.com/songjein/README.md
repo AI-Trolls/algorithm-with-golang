@@ -1,5 +1,4 @@
 # go cheat sheet
-이거 왜 갑자기 랜더링 안됨? 
 
 ### import
 ```go
@@ -219,4 +218,14 @@ func main() {
 	p = b
 	p.Print() // babo
 }
+```
+
+### empty interface & type assertion
+- empty interface는 타입에 상관없이 값을 저장할 수 있고, 이를 활용할 때 타입 캐스팅이 필요
+```go
+var empty_interface interface{} = 1
+
+var num int = empty_interface.(int)
+
+fmt.Println(num)
 ```
