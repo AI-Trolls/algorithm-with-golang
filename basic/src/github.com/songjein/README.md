@@ -182,7 +182,7 @@ func (p Person) print() { // call by val
 }
 ```
 
-## embedding
+### embedding
 - 상속 흉내 가능
 ```go
 type Student struct {
@@ -191,7 +191,7 @@ type Student struct {
 }
 ```
 
-## interface
+### interface
 - 인터페이스가 명시하고 있는 메서드만 구현한다면 같은 타입으로 취급하고 싶을 때
 ```go
 type A struct {}
