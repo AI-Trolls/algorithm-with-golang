@@ -171,4 +171,52 @@ func main() {
 }
 ```
 
+### receiver 
+- 구조체에 메서드를 연결할 수 있고, 리시버를 통해 멤버 변수에 접근 가능하다
+```go
+func (p *Person) print() { // call by ref
+	fmt.Println(p.name, p.age)
+}
+func (p Person) print() { // call by val
+	fmt.Println(p.name, p.age)
+}
+```
 
+## embedding
+- 상속 흉내 가능
+```go
+type Student struct {
+	Person // is-a
+	grade int
+}
+```
+
+## interface
+- 인터페이스가 명시하고 있는 메서드만 구현한다면 같은 타입으로 취급하고 싶을 때
+```go
+type A struct {}
+
+func (a A) Print() {
+	fmt.Println("hello")
+}
+
+type B struct {}
+
+func (b B) Print() {
+	fmt.Println("babo")
+}
+
+type Printer interface {
+	Print()
+}
+
+func main() {
+	var a A
+	var p Printer = h
+	p.Print() // hello
+	
+	var b B
+	p = b
+	p.Print() // babo
+}
+```
