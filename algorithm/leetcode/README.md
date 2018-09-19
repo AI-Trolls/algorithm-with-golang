@@ -4,3 +4,4 @@
 
 ## Dynamic Programming
 - [Target sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/targetsum.md) by 송제인
+- [Two sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/1_Two_Sum.go) by 
