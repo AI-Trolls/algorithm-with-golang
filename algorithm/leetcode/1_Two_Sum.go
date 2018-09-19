@@ -12,6 +12,7 @@
 
 // Brute Force
 // Time O(n^2), Space O(1)
+// 52 ms
 func twoSum(nums []int, target int) []int {
     for i := 0; i < len(nums); i++ {
         for j := i+1; j < len(nums); j++ {
@@ -25,6 +26,7 @@ func twoSum(nums []int, target int) []int {
 
 // Two-pass Hash Table
 // Time O(n), Space O(n)
+// 4 ms
 func twoSum(nums []int, target int) []int {
     var m map[int]int
     m = make(map[int]int)
@@ -44,6 +46,7 @@ func twoSum(nums []int, target int) []int {
 
 // One-pass Hash Table
 // Time O(n), Space O(n)
+// 4 ms
 func twoSum(nums []int, target int) []int {
     var m map[int]int
     m = make(map[int]int)
