@@ -19,6 +19,7 @@
  */
 
 // 20 ms
+// 예외처리의 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     _sumVal := 0
     _round := 0
