@@ -4,7 +4,11 @@
 
 ## Dynamic Programming
 - [Target sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/targetsum.md) by 송제인
-- [Two sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/1_Two_Sum.go) by 김찬란
+
 
 ## Linked List
-- [Add Two Numbers](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/2_Add_Two_Numbers.go) by 김찬란
+- [2. Add Two Numbers](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/2_Add_Two_Numbers.go) by 김찬란
+
+## 뭔 분류요
+- [1. Two sum](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/1_Two_Sum.go) by 김찬란
+- [3. Longest Substring Without Repeating Characters](https://github.com/AI-Trolls/algorithm-with-golang/blob/master/algorithm/leetcode/3_Longest_Substring_Without_Repeating_Characters.go) by 김찬란
