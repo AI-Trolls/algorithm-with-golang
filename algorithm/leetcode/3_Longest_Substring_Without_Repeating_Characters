@@ -1,0 +1,52 @@
+// LeetCode Medium
+// 3. Longest Substring Without Repeating Characters
+// Given a string, find the length of the longest substring without repeating characters.
+
+// Example:
+// Input: "abcabcbb"
+// Output: 3 
+// Explanation: The answer is "abc", with the length of 3. 
+
+// Example 2:
+// Input: "bbbbb"
+// Output: 1
+// Explanation: The answer is "b", with the length of 1.
+// Example 3:
+
+// Input: "pwwkew"
+// Output: 3
+// Explanation: The answer is "wke", with the length of 3. 
+//              Note that the answer must be a substring, "pwke" is a subsequence and not a substri
+
+// 368 ms
+func lengthOfLongestSubstring(s string) int {
+    longest_dis := 0
+    distance := 0
+    var m map[byte]bool
+    for i:=0; i<len(s); i++ {
+        m = make(map[byte]bool)
+        m[s[i]] = true
+        distance = 1
+        for j:=i+1; j<len(s); j++ {
+            value := m[s[j]]
+            if value == true {
+                break;
+            } else {
+                distance++
+                m[s[j]] = true
+            }
+        }
+        if distance > longest_dis {
+            longest_dis = distance
+        }
+    }
+    
+    if longest_dis == 0 && len(s) != 0 {
+        if  s[0] != s[1] {
+            longest_dis = len(s)
+        } else {
+            longest_dis = 1
+        }
+    }
+    return longest_dis
+}
