@@ -13,8 +13,17 @@ func main() {
 		return a*x + b
 	}
 
-	y := f(5)
+	inc := func() {
+		a++
+		b++
+	}
 
+	y := f(5)
+	fmt.Println(y)
+
+	inc()
+
+	y = f(5)
 	fmt.Println(y)
 
 	f2 := calc()

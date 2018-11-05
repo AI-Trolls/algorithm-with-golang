@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // there's no inheritance in go
-// but can have the same effact by using embedding
+// but can have the same effect by using embedding
 
 type Person struct {
 	name string

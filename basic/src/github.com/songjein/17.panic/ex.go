@@ -13,7 +13,7 @@ func f() {
 		fmt.Println(s)
 	}()
 
-	panic("Error !")
+	panic("Custom Error!")
 	fmt.Println("vim-go")
 }
 
