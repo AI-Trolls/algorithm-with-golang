@@ -142,7 +142,7 @@ defer func() {
 ### recover, panic
 ```go
 func f() {
-	defere func() {
+	defer func() {
 		s := recover()
 		// ~~~~
 	}()
